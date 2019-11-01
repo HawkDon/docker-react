@@ -6,4 +6,4 @@ before_install:
   - docker build -t oliverloenning/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run oliverloenning/docker-react npm run test -- --coverage
+  - docker run oliverloenning/docker-react npm run test -- --watchAll=false
